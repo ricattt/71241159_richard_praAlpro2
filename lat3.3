@@ -1,0 +1,24 @@
+gaji_perJam = int(input("Masukkan gaji perjam yang anda inginkan: "))
+jamKerja_perMinggu = int(input("Masukkan jumlah jam kerja anda dalam satu minggu: "))
+
+total_gaji = gaji_perJam * jamKerja_perMinggu * 5
+print("Total gaji anda: ", total_gaji, "Rupiah")
+
+rumus_pajak = total_gaji*14/100
+setelah_pajak = total_gaji - rumus_pajak
+print("Sisa gaji setelah pajak: ", setelah_pajak, "Rupiah")
+
+pakaian = setelah_pajak * 10/100
+print("Pengeluaran untuk pakaian: ", pakaian, "Rupiah")
+
+altul = setelah_pajak * 1/100
+print("Pengeluaran untuk alat tulis: ", altul, "Rupiah")
+
+sedekah = (setelah_pajak - pakaian - altul) * 25/100
+print("Jumlah pengeluaran untuk sedekah: ", sedekah, "Rupiah")
+
+anakYatim = sedekah * 30/100
+print("Sedekah untuk anak yatim: ", anakYatim, "Rupiah")
+
+anakDhuafa = sedekah - anakYatim
+print("Sedekah untuk anak dhuafa: ", anakDhuafa, "Rupiah")
